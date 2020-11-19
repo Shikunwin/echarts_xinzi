@@ -1,0 +1,166 @@
+@import "normalize.css";
+html,
+body {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: url(../imgs/bg.jpg) no-repeat 0 0 / cover;
+  width: 100%;
+  height: 100%;
+}
+html .box,
+body .box {
+  display: flex;
+  height: 100%;
+}
+html .box .left,
+body .box .left {
+  flex: 1;
+  margin: 8px;
+  border: 30px solid transparent;
+  border-width: 50px 38px 25px 126px;
+  border-image: url(../imgs/border.png) 50 38 25 126;
+  box-sizing: border-box;
+  position: relative;
+}
+html .box .left .lf_offset,
+body .box .left .lf_offset {
+  position: absolute;
+  top: -30px;
+  right: -18px;
+  bottom: -5px;
+  left: -96px;
+  padding: 20px;
+}
+html .box .left .lf_offset .staff,
+body .box .left .lf_offset .staff {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+html .box .left .lf_offset .staff span,
+body .box .left .lf_offset .staff span {
+  flex: 3;
+}
+html .box .left .lf_offset .staff span input,
+body .box .left .lf_offset .staff span input {
+  background-color: #fff;
+  border-radius: 8px;
+  outline: none;
+  height: 34px;
+  text-indent: 10px;
+  width: 120px;
+  margin: 0 10px;
+}
+html .box .left .lf_offset .staff button,
+body .box .left .lf_offset .staff button {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+}
+html .box .left .lf_offset table,
+body .box .left .lf_offset table {
+  width: 100%;
+}
+html .box .left .lf_offset table tr,
+body .box .left .lf_offset table tr {
+  display: flex;
+  text-align: center;
+}
+html .box .left .lf_offset table tr th:last-child,
+body .box .left .lf_offset table tr th:last-child {
+  border-right: 0;
+}
+html .box .left .lf_offset table tr td:last-child,
+body .box .left .lf_offset table tr td:last-child {
+  border-right: 0;
+}
+html .box .left .lf_offset table tr th,
+body .box .left .lf_offset table tr th {
+  flex: 1;
+  background-color: blue;
+  line-height: 30px;
+  border-right: 2px solid #000e52;
+}
+html .box .left .lf_offset table tr td,
+body .box .left .lf_offset table tr td {
+  flex: 1;
+  border-right: 1px solid #fff;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #fff;
+}
+html .box .left .lf_offset table tr td img,
+body .box .left .lf_offset table tr td img {
+  height: 24px;
+  vertical-align: middle;
+}
+html .box .right,
+body .box .right {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+html .box .right .ecbox1,
+body .box .right .ecbox1,
+html .box .right .ecbox2,
+body .box .right .ecbox2 {
+  flex: 1;
+  margin: 8px;
+  border: 30px solid transparent;
+  border-width: 50px 38px 25px 126px;
+  border-image: url(../imgs/border.png) 50 38 25 126;
+  box-sizing: border-box;
+  position: relative;
+  height: 50%;
+}
+html .box .right .ecbox1 .ec1_offset,
+body .box .right .ecbox1 .ec1_offset,
+html .box .right .ecbox2 .ec1_offset,
+body .box .right .ecbox2 .ec1_offset,
+html .box .right .ecbox1 .ec2_offset,
+body .box .right .ecbox1 .ec2_offset,
+html .box .right .ecbox2 .ec2_offset,
+body .box .right .ecbox2 .ec2_offset {
+  position: absolute;
+  top: -30px;
+  right: -18px;
+  bottom: -5px;
+  left: -96px;
+  padding: 20px;
+}
+html .box .right .ecbox1 .ec1_offset h3,
+body .box .right .ecbox1 .ec1_offset h3,
+html .box .right .ecbox2 .ec1_offset h3,
+body .box .right .ecbox2 .ec1_offset h3,
+html .box .right .ecbox1 .ec2_offset h3,
+body .box .right .ecbox1 .ec2_offset h3,
+html .box .right .ecbox2 .ec2_offset h3,
+body .box .right .ecbox2 .ec2_offset h3 {
+  margin-top: -16px;
+}
+html .box .right .ecbox1 .ec1_offset div,
+body .box .right .ecbox1 .ec1_offset div,
+html .box .right .ecbox2 .ec1_offset div,
+body .box .right .ecbox2 .ec1_offset div,
+html .box .right .ecbox1 .ec2_offset div,
+body .box .right .ecbox1 .ec2_offset div,
+html .box .right .ecbox2 .ec2_offset div,
+body .box .right .ecbox2 .ec2_offset div {
+  margin-left: -20px;
+}
+html .box .right .ecbox1 .ec1_offset .ec1,
+body .box .right .ecbox1 .ec1_offset .ec1,
+html .box .right .ecbox2 .ec1_offset .ec1,
+body .box .right .ecbox2 .ec1_offset .ec1 {
+  height: 100%;
+}
+html .box .right .ecbox1 .ec2_offset .ec2,
+body .box .right .ecbox1 .ec2_offset .ec2,
+html .box .right .ecbox2 .ec2_offset .ec2,
+body .box .right .ecbox2 .ec2_offset .ec2 {
+  height: 100%;
+}

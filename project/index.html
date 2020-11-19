@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斯内克-个人实战</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- html -->
+    <div class="box">
+        <!-- 输入框 -->
+        <div class="left">
+            <!-- 右侧500px固定 -->
+            <!-- 左侧自动拉伸 -->
+            <!-- 小于1280时候出现滚动条 -->
+            <div class="lf_offset">
+                <div class="staff">
+                    <span>姓名<input type="text" id="username"></span>
+                    <span>评分<input type="text" id="userpingfen"></span>
+                    <span>薪资<input type="text" id="userxinzi"></span>
+                    <button>新增</button>
+                </div>
+                <!-- 表格 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>评分</th>
+                            <th>薪资(单位：万)</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="chengji">
+                        <tr>
+                            <td>自行车</td>
+                            <td>78</td>
+                            <td>10</td>
+                            <td><img src="./imgs/del.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>自行车</td>
+                            <td>78</td>
+                            <td>10</td>
+                            <td><img src="./imgs/del.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>自行车</td>
+                            <td>78</td>
+                            <td>10</td>
+                            <td><img src="./imgs/del.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <!-- 上下共两个echarts -->
+            <!-- 高度各自50% -->
+            <div class="ecbox1">
+                <div class="ec1_offset">
+                    <h3>评分图示</h3>
+                    <div class="ec1" id="score"></div>
+                </div>
+            </div>
+            <div class="ecbox2">
+                <div class="ec2_offset">
+                    <h3>薪资图示</h3>
+                    <div class="ec2" id="salary"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- js -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

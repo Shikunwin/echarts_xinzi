@@ -1,0 +1,159 @@
+@import "normalize.css";
+// =========================嵌套
+// =========================嵌套
+// =========================嵌套
+html,
+body{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: url(../imgs/bg.jpg) no-repeat 0 0  /cover;
+    width: 100%;
+    height: 100%;
+    .box{
+        display: flex;
+        height: 100%;
+        .left{
+            flex: 1;
+            margin: 8px;
+            border: 30px solid transparent;
+            border-width: 50px 38px 25px 126px;
+            border-image: url(../imgs/border.png) 50 38 25 126;
+            box-sizing: border-box;
+            position: relative;
+            // height: 600px;//、、、、、、、、、、、一会要改的
+            .lf_offset{
+                // background-color: #fff;
+                position: absolute;
+                top: -30px;
+                right: -18px;
+                bottom: -5px;
+                left: -96px;
+                padding: 20px;
+                .staff{
+                    display: flex;
+                    margin-bottom: 20px;
+                    width: 100%;
+                    span{
+                        flex: 3;    
+                        // display: flex; 
+                        input{
+                            background-color: #fff;
+                            border-radius: 8px;
+                            outline: none;
+                            height: 34px;
+                            text-indent: 10px;
+                            width: 120px;
+                            // flex: 1;
+                            margin:0 10px;
+                        }
+                    }
+                    button{
+                        flex: 1;
+                        background-color:transparent;
+                        border: 1px solid #fff;
+                        color: #fff;
+                        border-radius: 8px;
+                        outline: none;
+                    }
+                }
+                table{
+                    width: 100%;
+                    tr{
+                        display: flex;
+                        text-align: center;
+                        th:last-child{
+                            border-right: 0;
+                        }
+                        td:last-child{
+                            border-right: 0;
+                        }
+                        th{
+                            flex: 1;
+                            background-color: blue;
+                            line-height: 30px;
+                            border-right: 2px solid #000e52;
+                        }
+                        td{
+                            flex: 1;
+                            border-right: 1px solid #fff;
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px solid #fff;
+                            img{
+                                height: 24px;
+                                // display: table-cell;
+                                // text-align: center;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            // background-color: #ff0;
+                .ecbox1,.ecbox2{
+                    flex: 1;
+                    margin: 8px;
+                    border: 30px solid transparent;
+                    border-width: 50px 38px 25px 126px;
+                    border-image: url(../imgs/border.png) 50 38 25 126;
+                    box-sizing: border-box;
+                    position: relative;
+                    height: 50%;
+                    .ec1_offset,.ec2_offset{
+                        position: absolute;
+                        top: -30px;
+                        right: -18px;
+                        bottom: -5px;
+                        left: -96px;
+                        padding: 20px;
+                        // background-color: #fff;
+                        h3{
+                            margin-top: -16px;
+                        }
+                        div{
+                            margin-left: -20px;
+                        }
+                    }
+                    .ec1_offset{
+                        .ec1{
+                            height: 100%;
+                        }
+                    }
+                    .ec2_offset{
+                        .ec2{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =========================嵌套
+// =========================嵌套
+// =========================嵌套
